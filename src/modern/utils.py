@@ -6,8 +6,8 @@ from pathlib import Path
 from typing import Any
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_TRAIN_DIR = PROJECT_ROOT / "dataset/raw/training"
-DEFAULT_TEST_DIR = PROJECT_ROOT / "dataset/raw/testing"
+DEFAULT_TRAIN_DIR = PROJECT_ROOT / "dataset/processed/training"
+DEFAULT_TEST_DIR = PROJECT_ROOT / "dataset/processed/testing"
 DEFAULT_CHECKPOINT_DIR = PROJECT_ROOT / "checkpoints"
 
 CNN_ARCHITECTURES = ("simple_cnn", "resnet18", "resnet50", "efficientnet_b0")
@@ -18,7 +18,7 @@ SUPPORTED_MODELS = ("cnn", "transformer")
 @dataclass
 class ModelConfig:
     model: str = "transformer"
-    arch: str = "mini_vit"
+    arch: str = "vit_b16"
     pretrained: bool = True
     epochs: int = 30
     warmup_epochs: int = 5
