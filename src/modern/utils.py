@@ -17,8 +17,8 @@ SUPPORTED_MODELS = ("cnn", "transformer")
 
 @dataclass
 class ModelConfig:
-    model: str = "transformer"
-    arch: str = "mini_vit"
+    model: str = "cnn"
+    arch: str = "simple_cnn"
     pretrained: bool = True
     epochs: int = 30
     warmup_epochs: int = 5
