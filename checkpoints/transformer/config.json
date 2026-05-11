@@ -1,0 +1,17 @@
+{
+  "model": "transformer",
+  "arch": "mini_vit",
+  "pretrained": true,
+  "epochs": 30,
+  "warmup_epochs": 5,
+  "batch_size": 32,
+  "img_size": 224,
+  "lr": 0.0001,
+  "min_lr": 1e-06,
+  "weight_decay": 0.0001,
+  "label_smoothing": 0.1,
+  "num_workers": 4,
+  "train_dir": "/Users/macmas/Documents/CEDT/y3s2/introduction_2_digital_imaging/Brain-Tumor-Classification-/dataset/processed/training",
+  "test_dir": "/Users/macmas/Documents/CEDT/y3s2/introduction_2_digital_imaging/Brain-Tumor-Classification-/dataset/processed/testing",
+  "save_dir": "/Users/macmas/Documents/CEDT/y3s2/introduction_2_digital_imaging/Brain-Tumor-Classification-/checkpoints/transformer"
+}
