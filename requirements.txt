@@ -4,7 +4,7 @@
 # Deep Learning
 torch>=2.2.0
 torchvision>=0.17.0
-torch_xla>=2.0.0
+# torch_xla>=2.0.0
 
 # Data & Metrics
 numpy>=1.24.0
