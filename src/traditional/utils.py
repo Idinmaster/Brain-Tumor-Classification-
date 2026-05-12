@@ -38,8 +38,8 @@ class TraditionalConfig:
     svm_gamma: str = "scale"
 
     # Data paths
-    train_dir: str = str(PROJECT_ROOT / "dataset/raw/training")
-    test_dir: str = str(PROJECT_ROOT / "dataset/raw/testing")
+    train_dir: str = str(PROJECT_ROOT / "dataset/processed/training")
+    test_dir: str = str(PROJECT_ROOT / "dataset/processed/testing")
     save_dir: str = str(PROJECT_ROOT / "checkpoints/traditional")
 
     def __post_init__(self) -> None:

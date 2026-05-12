@@ -18,10 +18,10 @@ from src.traditional.utils import TraditionalConfig
 def main():
     parser = argparse.ArgumentParser(description="Train traditional ML pipeline")
     parser.add_argument("--train_dir", type=str,
-                        default=str(Path(PROJECT_ROOT / "dataset/raw/training")),
+                        default=str(Path(PROJECT_ROOT / "dataset/processed/training")),
                         help="Path to training data directory")
     parser.add_argument("--test_dir", type=str,
-                        default=str(Path(PROJECT_ROOT / "dataset/raw/testing")),
+                        default=str(Path(PROJECT_ROOT / "dataset/processed/testing")),
                         help="Path to testing data directory")
     parser.add_argument("--save_path", type=str,
                         default=str(Path(PROJECT_ROOT / "checkpoints/traditional/pipeline.pkl")),
